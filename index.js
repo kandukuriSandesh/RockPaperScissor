@@ -80,8 +80,8 @@ function timer(){
       btn1.disabled = false;
       resultOutput.style.color="rgb(104, 104, 104)";
       resultOutput.style.fontWeight = "normal";
-      points1.style.border = "3px solid rgb(121, 119, 119)";
-      points2.style.border = "3px solid rgb(121, 119, 119)";
+      points1.style.border = "5px solid rgb(121, 119, 119)";
+      points2.style.border = "5px solid rgb(121, 119, 119)";
 
       
       if(points1dis.textContent == 5){
