@@ -5,6 +5,8 @@ let btn1 = document.getElementsByClassName("btn1")[0];
 let btn2 = document.getElementsByClassName("btn2")[0];
 let points1dis = document.getElementsByClassName("points1dis")[0];
 let points2dis = document.getElementsByClassName("points2dis")[0];
+let points1 = document.getElementsByClassName("points1")[0];
+let points2 = document.getElementsByClassName("points2")[0];
 let num = 0;
 let result1 = "";
 let result2 = "";
@@ -78,6 +80,9 @@ function timer(){
       btn1.disabled = false;
       resultOutput.style.color="rgb(104, 104, 104)";
       resultOutput.style.fontWeight = "normal";
+      points1.style.border = "3px solid rgb(121, 119, 119)";
+      points2.style.border = "3px solid rgb(121, 119, 119)";
+
       
       if(points1dis.textContent == 5){
         alert("Hurray! Player 1 has won the Game");
@@ -101,6 +106,7 @@ function player1increment(){
     resultOutput.style.color="rgb(104, 104, 104)";
     resultOutput.style.fontWeight = "bold";
     points1dis.textContent = parseInt(points1dis.textContent) + 1 
+    points1.style.border = "5px solid green";
 }
 
 function player2increment(){
@@ -108,6 +114,7 @@ function player2increment(){
     resultOutput.style.color="rgb(190, 160, 190)";
      resultOutput.style.fontWeight = "bold";
     points2dis.textContent = parseInt(points2dis.textContent) + 1
+    points2.style.border = "5px solid green";
 }
 
 function timerfunc(){
